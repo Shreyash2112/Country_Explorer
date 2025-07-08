@@ -20,20 +20,20 @@ export default function Navbar() {
             Home
           </NavLink>
           <NavLink
-            to="/about"
-            className={({ isActive }): string => {
-              return isActive ? "text-indigo-800 font-bold" : "text-gray-700";
-            }}
-          >
-            About
-          </NavLink>
-          <NavLink
             to="/countries"
             className={({ isActive }): string => {
               return isActive ? "text-indigo-800 font-bold" : "text-gray-700";
             }}
           >
             Countries
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }): string => {
+              return isActive ? "text-indigo-800 font-bold" : "text-gray-700";
+            }}
+          >
+            About
           </NavLink>
         </nav>
       </div>
